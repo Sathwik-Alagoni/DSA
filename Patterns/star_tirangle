@@ -1,0 +1,26 @@
+def nStarTriangle(n: int) -> None:
+    k =0 
+    
+    for i in range(n,0,-1):
+        for j in range(1,n+n+1):
+            if j>=i and j<=(i+2*k):
+                print("*",end=" ")
+            else:
+                print(" ",end=" ")
+        print()   
+        k=k+1
+                
+nStarTriangle(5)
+
+def nStarTriangle(n: int) -> None:
+    r=n-1
+    for i in range(n):
+        for j in range(n+n-1):
+            if j>=i and j<=(i+2*r):
+                print("*",end=" ")
+            else:
+                print(" ",end=" ")
+        print()        
+        r=r-1
+                
+nStarTriangle(5)
